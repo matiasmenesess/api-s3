@@ -50,7 +50,7 @@ functions:
         memorySize: 512
         events:
             - http:
-                  path: /s3/upload
+                  path: /s3/subir
                   method: post
                   cors: true
                   integration: lambda
