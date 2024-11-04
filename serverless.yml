@@ -33,7 +33,7 @@ functions:
         memorySize: 512
         events:
             - http:
-                  path: /s3/bucket/create
+                  path: /s3/bucket/crear
                   method: post
                   cors: true
                   integration: lambda
@@ -41,7 +41,7 @@ functions:
         handler: crear_directory.lambda_handler
         events:
             - http:
-                  path: /s3/bucket/create-directory
+                  path: /s3/bucket/crear-directorio
                   method: post
                   cors: true
                   integration: lambda
