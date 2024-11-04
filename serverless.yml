@@ -2,14 +2,14 @@ org: matiasmeneses
 service: api-s3
 
 provider:
-  name: aws
-  runtime: python3.12	
-  # Default memory size for functions (default: 256MB)
-    memorySize: 256
-    timeout: 30
-    iam:
-      role: arn:aws:iam::344494306973:role/LabRole
-      
+    name: aws
+    runtime: python3.12	
+    # Default memory size for functions (default: 256MB)
+      memorySize: 256
+      timeout: 30
+      iam:
+        role: arn:aws:iam::344494306973:role/LabRole
+        
 functions:
     lista_buckets:
         handler: lista_buckets.lambda_handler
