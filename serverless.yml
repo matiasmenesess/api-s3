@@ -37,8 +37,8 @@ functions:
                   method: post
                   cors: true
                   integration: lambda
-    crear_directory:
-        handler: crear_directory.lambda_handler
+    crear_directorio:
+        handler: crear_directorio.lambda_handler
         events:
             - http:
                   path: /s3/bucket/crear-directorio
