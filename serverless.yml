@@ -28,7 +28,7 @@ functions:
                   method: post
                   cors: true
                   integration: lambda
-    create_bucket:
+    crear_bucket:
         handler: crear_bucket.lambda_handler
         memorySize: 512
         events:
@@ -37,7 +37,7 @@ functions:
                   method: post
                   cors: true
                   integration: lambda
-    create_directory:
+    crear_directory:
         handler: crear_directory.lambda_handler
         events:
             - http:
@@ -45,7 +45,7 @@ functions:
                   method: post
                   cors: true
                   integration: lambda
-    upload_file:
+    subir_archivo:
         handler: subir_archivo.lambda_handler
         memorySize: 512
         events:
